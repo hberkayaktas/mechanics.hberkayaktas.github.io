@@ -1,0 +1,30 @@
+title: Makine Mühendisliği Ansiklopedisi
+name: "Makine Mühendisliği Ansiklopedisi"
+description: "Tasarım – Analiz – Saha – Bakım – Standartlar"
+
+url: "https://mechanics.hberkayaktas.github.io"
+baseurl: ""
+
+theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
+
+search: true
+breadcrumbs: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: "Berkay Aktaş"
+  bio: "Mechanical Engineer – Technical Systems, Design & Field Engineering"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
