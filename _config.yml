@@ -11,7 +11,7 @@ description: "Tasarım – Analiz – Saha – Bakım – Standartlar"
 
 url: "https://mechanics.hberkayaktas.github.io"
 baseurl: ""
-repository: "hberkayaktas/mechanics.hberkayaktas.github.io"
+repository: "mechanics.hberkayaktas.github.io"
 
 breadcrumbs: true
 enable_copy_code_button: true
