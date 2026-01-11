@@ -1,25 +1,61 @@
-title: Makine Mühendisliği Ansiklopedisi
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+
+# Site Settings
+locale: "tr-TR"
+title: "Makine Mühendisliği Ansiklopedisi"
+title_separator: "-"
 name: "Makine Mühendisliği Ansiklopedisi"
 description: "Tasarım – Analiz – Saha – Bakım – Standartlar"
 
 url: "https://mechanics.hberkayaktas.github.io"
 baseurl: ""
+repository: "hberkayaktas/mechanics.hberkayaktas.github.io"
 
-theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
-
-search: true
 breadcrumbs: true
+enable_copy_code_button: true
+search: true
+search_full_content: true
+
+# SEO & Social
+social:
+  type: Person
+  name: "Berkay Aktaş"
+  links:
+    - "https://github.com/hberkayaktas"
+    - "https://hberkayaktas.github.io"
+
+# Author
+author:
+  name: "Berkay Aktaş"
+  bio: "Mechanical Engineer – Design, Analysis, Industrial Systems & Field Engineering"
+  location: "Türkiye"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hberkayaktas"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://hberkayaktas.github.io"
+
+# Markdown & Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  toc_levels: 1..6
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
-author:
-  name: "Berkay Aktaş"
-  bio: "Mechanical Engineer – Technical Systems, Design & Field Engineering"
-
+# Defaults: Wiki behavior
 defaults:
   - scope:
       path: ""
@@ -28,3 +64,5 @@ defaults:
       layout: single
       toc: true
       toc_sticky: true
+      sidebar:
+        nav: "docs"
